@@ -13,6 +13,8 @@
 		375A64F71C0A9FDA00C61020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375A64F61C0A9FDA00C61020 /* Assets.xcassets */; };
 		375A64FA1C0A9FDA00C61020 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375A64F81C0A9FDA00C61020 /* LaunchScreen.storyboard */; };
 		375A65051C0A9FDB00C61020 /* nikolenkoanton92Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375A65041C0A9FDB00C61020 /* nikolenkoanton92Tests.swift */; };
+		375A65101C0B8C8D00C61020 /* SkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375A650F1C0B8C8D00C61020 /* SkillTableViewCell.swift */; };
+		375A65121C0B92B000C61020 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375A65111C0B92B000C61020 /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		375A65001C0A9FDA00C61020 /* nikolenkoanton92Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nikolenkoanton92Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		375A65041C0A9FDB00C61020 /* nikolenkoanton92Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nikolenkoanton92Tests.swift; sourceTree = "<group>"; };
 		375A65061C0A9FDB00C61020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		375A650F1C0B8C8D00C61020 /* SkillTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillTableViewCell.swift; sourceTree = "<group>"; };
+		375A65111C0B92B000C61020 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				375A64F61C0A9FDA00C61020 /* Assets.xcassets */,
 				375A64F81C0A9FDA00C61020 /* LaunchScreen.storyboard */,
 				375A64FB1C0A9FDA00C61020 /* Info.plist */,
+				375A650F1C0B8C8D00C61020 /* SkillTableViewCell.swift */,
+				375A65111C0B92B000C61020 /* RatingControl.swift */,
 			);
 			path = nikolenkoanton92;
 			sourceTree = "<group>";
@@ -198,6 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				375A65121C0B92B000C61020 /* RatingControl.swift in Sources */,
+				375A65101C0B8C8D00C61020 /* SkillTableViewCell.swift in Sources */,
 				375A64F21C0A9FDA00C61020 /* ViewController.swift in Sources */,
 				375A64F01C0A9FDA00C61020 /* AppDelegate.swift in Sources */,
 			);
