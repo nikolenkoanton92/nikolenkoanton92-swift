@@ -155,10 +155,10 @@
             </objects>
             <point key="canvasLocation" x="1617.0666666666666" y="-167.56"/>
         </scene>
-        <!--View Controller-->
+        <!--Skill View Controller-->
         <scene sceneID="yGG-63-YxD">
             <objects>
-                <viewController id="uWJ-GH-UBO" sceneMemberID="viewController">
+                <viewController id="uWJ-GH-UBO" customClass="SkillViewController" customModule="nikolenkoanton92" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DRB-Lr-B5R"/>
                         <viewControllerLayoutGuide type="bottom" id="4wD-Ga-8ZK"/>
@@ -190,6 +190,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="p0Q-OL-yeC"/>
+                    <connections>
+                        <outlet property="addNewSkillButton" destination="s5S-mu-ohW" id="3D1-VP-3VS"/>
+                        <outlet property="ratingControl" destination="f5c-WU-8BO" id="AJ7-Et-BdB"/>
+                        <outlet property="skillNameTextField" destination="P5f-l0-tXP" id="gUZ-3x-HBP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzy-15-qPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -274,6 +279,6 @@
         <image name="vader120" width="120" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="og4-nS-21c"/>
+        <segue reference="mIu-vN-dzG"/>
     </inferredMetricsTieBreakers>
 </document>

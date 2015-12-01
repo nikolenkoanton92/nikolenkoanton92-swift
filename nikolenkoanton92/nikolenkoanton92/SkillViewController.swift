@@ -9,7 +9,13 @@
 import UIKit
 
 class SkillViewController: UIViewController {
+  
+  // MARK: Properties
 
+  @IBOutlet weak var skillNameTextField: UITextField!
+  @IBOutlet weak var ratingControl: RatingControl!
+  @IBOutlet weak var addNewSkillButton: UIButton!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
