@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SkillViewController: UIViewController {
+class SkillViewController: UIViewController, UITextFieldDelegate {
   
   // MARK: Properties
 
@@ -20,7 +20,13 @@ class SkillViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+      
+        // Handle the text field's user input through delegate callbacks
+      
+      skillNameTextField.delegate = self
+      
     }
+  
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
