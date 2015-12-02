@@ -18,6 +18,7 @@
 		375A65141C0D7CED00C61020 /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375A65131C0D7CED00C61020 /* SkillViewController.swift */; };
 		375A651A1C0EC49B00C61020 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375A65191C0EC49B00C61020 /* Skill.swift */; };
 		375A651B1C0EC49B00C61020 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375A65191C0EC49B00C61020 /* Skill.swift */; };
+		375A651D1C0ECAC200C61020 /* SkillTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375A651C1C0ECAC200C61020 /* SkillTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		375A65111C0B92B000C61020 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		375A65131C0D7CED00C61020 /* SkillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
 		375A65191C0EC49B00C61020 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		375A651C1C0ECAC200C61020 /* SkillTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				375A65111C0B92B000C61020 /* RatingControl.swift */,
 				375A65131C0D7CED00C61020 /* SkillViewController.swift */,
 				375A65191C0EC49B00C61020 /* Skill.swift */,
+				375A651C1C0ECAC200C61020 /* SkillTableViewController.swift */,
 			);
 			path = nikolenkoanton92;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			files = (
 				375A65121C0B92B000C61020 /* RatingControl.swift in Sources */,
 				375A65101C0B8C8D00C61020 /* SkillTableViewCell.swift in Sources */,
+				375A651D1C0ECAC200C61020 /* SkillTableViewController.swift in Sources */,
 				375A65141C0D7CED00C61020 /* SkillViewController.swift in Sources */,
 				375A651A1C0EC49B00C61020 /* Skill.swift in Sources */,
 				375A64F21C0A9FDA00C61020 /* ViewController.swift in Sources */,

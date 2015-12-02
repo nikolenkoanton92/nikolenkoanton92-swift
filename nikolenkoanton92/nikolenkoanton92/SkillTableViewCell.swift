@@ -13,6 +13,7 @@ class SkillTableViewCell: UITableViewCell {
 
   // MARK: Properties
   @IBOutlet weak var skillLabel: UILabel!
+  @IBOutlet weak var ratingControl: RatingControl!
   
     override func awakeFromNib() {
         super.awakeFromNib()

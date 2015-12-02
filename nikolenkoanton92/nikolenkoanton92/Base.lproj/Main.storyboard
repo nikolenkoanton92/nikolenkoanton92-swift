@@ -107,33 +107,34 @@
         <!--Skills-->
         <scene sceneID="SUG-OO-2Vx">
             <objects>
-                <tableViewController id="D71-vz-7HX" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mar-ef-Anh">
+                <tableViewController id="D71-vz-7HX" customClass="SkillTableViewController" customModule="nikolenkoanton92" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="mar-ef-Anh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SkillTableView" rowHeight="90" id="zxx-WU-Qr3" customClass="SkillTableViewCell" customModule="nikolenkoanton92" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SkillTableViewCell" rowHeight="90" id="i6i-4O-6Lb" customClass="SkillTableViewCell" customModule="nikolenkoanton92" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="320" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zxx-WU-Qr3" id="0Cb-Qf-DTN">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i6i-4O-6Lb" id="6vc-db-bQ4">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uz-7j-eoG">
-                                            <rect key="frame" x="8" y="15" width="584" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pT6-8Q-WB2">
+                                            <rect key="frame" x="8" y="8" width="304" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XyY-ta-W7d" customClass="RatingControl">
-                                            <rect key="frame" x="8" y="44" width="584" height="37.5"/>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QHe-nl-1fJ" customClass="RatingControl" customModule="nikolenkoanton92" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="34" width="304" height="48.5"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="skillLabel" destination="7uz-7j-eoG" id="fkn-Xq-Irv"/>
+                                    <outlet property="ratingControl" destination="QHe-nl-1fJ" id="jA1-kZ-gOW"/>
+                                    <outlet property="skillLabel" destination="pT6-8Q-WB2" id="w7d-kC-tid"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -153,7 +154,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dES-Su-RiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1617.0666666666666" y="-167.56"/>
+            <point key="canvasLocation" x="1617" y="-168"/>
         </scene>
         <!--Skill View Controller-->
         <scene sceneID="yGG-63-YxD">
@@ -256,29 +257,8 @@
             </objects>
             <point key="canvasLocation" x="256" y="423.15999999999997"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="aOC-Op-HUO">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="48a-8R-ZD0" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bk7-GB-Zw0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="D71-vz-7HX" kind="relationship" relationship="rootViewController" id="og4-nS-21c"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3qa-T6-LAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1184" y="-167.56"/>
-        </scene>
     </scenes>
     <resources>
         <image name="vader120" width="120" height="120"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="mIu-vN-dzG"/>
-    </inferredMetricsTieBreakers>
 </document>
