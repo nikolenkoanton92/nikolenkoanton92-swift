@@ -20,6 +20,12 @@ class Skill:NSObject, NSCoding{
   var name: String
   var rating: Int
   
+  // MARK: Archiving Paths
+  
+  static let DocumentsDirectory = NSFileManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
+  static let AchiveURL = DocumentsDirectory.URLByAppendingPathComponent("skills")
+  
+  
   // MARK: Initialization
   
   init?(name: String, rating: Int){
