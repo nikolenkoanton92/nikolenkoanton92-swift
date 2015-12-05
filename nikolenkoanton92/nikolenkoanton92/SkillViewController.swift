@@ -14,7 +14,21 @@ class SkillViewController: UIViewController, UITextFieldDelegate {
 
   @IBOutlet weak var skillNameTextField: UITextField!
   @IBOutlet weak var ratingControl: RatingControl!
-  @IBOutlet weak var addNewSkillButton: UIButton!
+  
+  var skill: Skill?
+  
+  @IBOutlet weak var saveButton: UIBarButtonItem!
+  
+  // MARK: Navigation
+  
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if saveButton === sender{
+      let name = skillNameTextField.text ?? ""
+      let rating = ratingControl.rating
+      
+      skill = Skill(name: name, rating: rating)
+    }
+  }
   
     override func viewDidLoad() {
         super.viewDidLoad()

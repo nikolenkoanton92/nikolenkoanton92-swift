@@ -77,7 +77,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Skills"/>
                                 <connections>
-                                    <segue destination="D71-vz-7HX" kind="push" id="mIu-vN-dzG"/>
+                                    <segue destination="D71-vz-7HX" kind="push" id="bWd-XB-dvi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -102,9 +102,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="689.06666666666661" y="442.09333333333331"/>
+            <point key="canvasLocation" x="927" y="41"/>
         </scene>
-        <!--Skills-->
+        <!--Your Skills-->
         <scene sceneID="SUG-OO-2Vx">
             <objects>
                 <tableViewController id="D71-vz-7HX" customClass="SkillTableViewController" customModule="nikolenkoanton92" customModuleProvider="target" sceneMemberID="viewController">
@@ -143,11 +143,11 @@
                             <outlet property="delegate" destination="D71-vz-7HX" id="FQj-uL-GBh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Skills" id="BEt-Ol-2dU">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bed-yR-bB0"/>
-                        <barButtonItem key="rightBarButtonItem" title="New Skill" id="R7r-o6-FYc">
+                    <navigationItem key="navigationItem" title="Your Skills" id="zgS-2g-b49">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="5ZF-cu-tGd"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RJF-Sm-wYN">
                             <connections>
-                                <segue destination="uWJ-GH-UBO" kind="push" id="X6d-sP-uYv"/>
+                                <segue destination="zqh-CS-Yxe" kind="push" id="Qlv-jb-BZA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -156,7 +156,7 @@
             </objects>
             <point key="canvasLocation" x="1617" y="-168"/>
         </scene>
-        <!--Skill View Controller-->
+        <!--New Skill-->
         <scene sceneID="yGG-63-YxD">
             <objects>
                 <viewController id="uWJ-GH-UBO" customClass="SkillViewController" customModule="nikolenkoanton92" customModuleProvider="target" sceneMemberID="viewController">
@@ -190,16 +190,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="p0Q-OL-yeC"/>
+                    <navigationItem key="navigationItem" title="New Skill" id="p0Q-OL-yeC">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Fj2-Lc-lXg"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="xFx-5a-tyR"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="addNewSkillButton" destination="s5S-mu-ohW" id="3D1-VP-3VS"/>
                         <outlet property="ratingControl" destination="f5c-WU-8BO" id="AJ7-Et-BdB"/>
+                        <outlet property="saveButton" destination="xFx-5a-tyR" id="ejD-qt-PkO"/>
                         <outlet property="skillNameTextField" destination="P5f-l0-tXP" id="gUZ-3x-HBP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzy-15-qPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1992" y="-165"/>
+            <point key="canvasLocation" x="2567" y="-168"/>
         </scene>
         <!--Experience-->
         <scene sceneID="2ba-7d-WJ7">
@@ -256,6 +260,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iLA-Ry-rAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="256" y="423.15999999999997"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Oax-FJ-iL9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zqh-CS-Yxe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="7Fq-sm-U1r"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lbf-yq-3I9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uWJ-GH-UBO" kind="relationship" relationship="rootViewController" id="P4s-zz-MMP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pDT-Ot-gF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2035" y="-168"/>
         </scene>
     </scenes>
     <resources>

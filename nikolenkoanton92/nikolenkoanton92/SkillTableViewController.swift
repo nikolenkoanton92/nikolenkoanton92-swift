@@ -115,5 +115,19 @@ class SkillTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+  
+  // MARK: NSCoding
+  
+  func saveSkills(){
+    let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(skills, toFile: Skill.AchiveURL.path!)
+    
+    if(!isSuccessfulSave){
+      print("Failed to save skill")
+    }
+  }
+  
+  func loadSkiils() -> [Skill]?{
+    return NSKeyedUnarchiver.unarchiveObjectWithFile(Skill.AchiveURL.path!)as?[Skill]
+  }
 
 }
