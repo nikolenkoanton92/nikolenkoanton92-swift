@@ -145,9 +145,9 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Your Skills" id="zgS-2g-b49">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="5ZF-cu-tGd"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RJF-Sm-wYN">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ysv-l1-BrS">
                             <connections>
-                                <segue destination="zqh-CS-Yxe" kind="push" id="Qlv-jb-BZA"/>
+                                <segue destination="uWJ-GH-UBO" kind="push" id="Xly-8a-u2b"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -192,18 +192,22 @@
                     </view>
                     <navigationItem key="navigationItem" title="New Skill" id="p0Q-OL-yeC">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Fj2-Lc-lXg"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="xFx-5a-tyR"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="xFx-5a-tyR">
+                            <connections>
+                                <segue destination="aMd-U7-gAZ" kind="unwind" unwindAction="unwindToSkillList:" id="Ots-91-egV"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="addNewSkillButton" destination="s5S-mu-ohW" id="3D1-VP-3VS"/>
                         <outlet property="ratingControl" destination="f5c-WU-8BO" id="AJ7-Et-BdB"/>
                         <outlet property="saveButton" destination="xFx-5a-tyR" id="ejD-qt-PkO"/>
                         <outlet property="skillNameTextField" destination="P5f-l0-tXP" id="gUZ-3x-HBP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzy-15-qPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="aMd-U7-gAZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2567" y="-168"/>
+            <point key="canvasLocation" x="2179" y="-154"/>
         </scene>
         <!--Experience-->
         <scene sceneID="2ba-7d-WJ7">
@@ -260,25 +264,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iLA-Ry-rAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="256" y="423.15999999999997"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Oax-FJ-iL9">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zqh-CS-Yxe" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="7Fq-sm-U1r"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lbf-yq-3I9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="uWJ-GH-UBO" kind="relationship" relationship="rootViewController" id="P4s-zz-MMP"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pDT-Ot-gF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2035" y="-168"/>
         </scene>
     </scenes>
     <resources>

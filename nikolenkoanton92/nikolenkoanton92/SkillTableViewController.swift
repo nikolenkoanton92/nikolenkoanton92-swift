@@ -129,5 +129,17 @@ class SkillTableViewController: UITableViewController {
   func loadSkiils() -> [Skill]?{
     return NSKeyedUnarchiver.unarchiveObjectWithFile(Skill.AchiveURL.path!)as?[Skill]
   }
+  
+  // MARK: Action
+  
+  @IBAction func unwindToSkillList(sender: UIStoryboardSegue){
+    if let sourceViewController = sender.sourceViewController as?
+      SkillViewController, skill = sourceViewController.skill{
+      // add new skill
+        let newIndexPath = NSIndexPath(forRow: skills.count, inSection: 0)
+        skills.append(skill)
+        tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .Bottom)
+    }
+  }
 
 }
