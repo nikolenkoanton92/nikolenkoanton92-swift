@@ -27,7 +27,6 @@ class RatingControl: UIView {
   override func layoutSubviews() {
     let buttonSize = Int(frame.size.height)
     
-    print(buttonSize)
     var buttonFrame = CGRect(x: 0, y: 0, width: buttonSize, height: buttonSize)
     
     
@@ -80,7 +79,6 @@ class RatingControl: UIView {
   }
   
   func updateButtonSelectionStates(){
-    print("updateButtonSelectionStates")
     for(index,button) in ratingButtons.enumerate(){
       // If the index of a button is less than the rating, that button should be selected.
       button.selected = index < rating

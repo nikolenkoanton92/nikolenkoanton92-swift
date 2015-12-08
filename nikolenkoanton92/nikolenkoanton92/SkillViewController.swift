@@ -47,7 +47,14 @@ class SkillViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-
+  // hide keyboard
+  
+  func textFieldShouldReturn(textField: UITextField) -> Bool {
+    textField.resignFirstResponder()
+    return true
+  }
+  
+  
     /*
     // MARK: - Navigation
 

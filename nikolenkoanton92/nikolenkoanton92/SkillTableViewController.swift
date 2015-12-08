@@ -24,7 +24,6 @@ class SkillTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
       
       // Load the sample data of skills
-      print("Hello World")
       loadSampleSkills()
     }
   
@@ -51,7 +50,6 @@ class SkillTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-      print("Cont skills ", skills.count)
         return skills.count
     }
 
@@ -66,7 +64,6 @@ class SkillTableViewController: UITableViewController {
         let skill = skills[indexPath.row]
         cell.skillLabel.text = skill.name
         cell.ratingControl.rating = skill.rating
-        print(cell)
         return cell
     }
 
